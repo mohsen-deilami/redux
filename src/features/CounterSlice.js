@@ -5,14 +5,14 @@ const initialState={
 }
 
 const counterSlice=createSlice({
-    name:'Counter',
+    name:'counter',
     initialState,
-    reducer:{
+    reducers:{
         increment:(state, action)=>{
-            return state.countValue ++
+             state.counterValue ++
         },
         decremnt:(state , action)=>{
-            return statet.countValue --
+             state.counterValue --
         }
     }
 })
