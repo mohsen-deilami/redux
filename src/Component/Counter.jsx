@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { useSelector , useDispatch } from 'react-redux';
-import { selectCounter} from '../features/CounterSlice';
-import {increment , decremnt , incrementByAmount} from './../features/CounterSlice';
+import {selectCounter ,increment , decremnt , incrementByAmount} from './../features/CounterSlice';
 
 
 
