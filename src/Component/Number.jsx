@@ -5,8 +5,7 @@ import { increment , decrement , selectNumber } from '../features/NumberSlice';
 export default function Number() {
     const number = useSelector(selectNumber);
     const dispatch=useDispatch()
-    console.log(number);
-    
+       
   return (
     <div>
         <p> Number is : {number}</p>
