@@ -14,10 +14,7 @@ const numberSlice= createSlice({
             state.numberValue --
         },
         extraReducers :(builder)=>{
-            builder.addCase(incrementCounter ,(state,action)=>{
-                state.numberValue ++
-                console.log('extraa :=>',state.numberValue)
-            })
+            builder.addCase(incrementCounter ,(state,action)=> state.numberValue ++)
         } 
     }
 })
