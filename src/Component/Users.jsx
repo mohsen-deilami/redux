@@ -15,15 +15,12 @@ export default function Users() {
   return (
 
       <div>
-        <h2>Users</h2>
-        {users !== undefined ? (
-            <>
-          { users.loading ? <h3>Loading...</h3> : null}
-          {users.users.length ? users.map(user => <p>{user.name}</p>) :null}
-            </>
-        ) : null }
-  <button onClick={()=>console.log(users)
-  }>View Users</button>
+        <h2>Users</h2>   
+
+  {users.loading ? <h3>loading</h3> : null}
+  {users.users.length ? users.users.map(user =>(
+    <p>{user.name}</p>
+  )) : null}
   
         </div>
   )
